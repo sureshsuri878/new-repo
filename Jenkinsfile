@@ -27,7 +27,7 @@ stage('Build') {
                     pwd
                     ls
                     mvn clean package
-                    docker run -it optimus026/firstdocker:v1
+                    docker run -d optimus026/firstdocker:v1
                     '''
                 }
             }
