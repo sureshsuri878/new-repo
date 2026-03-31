@@ -46,7 +46,7 @@ stage('Build') {
             scp target/*.war root@3.239.81.157:/opt/tomcat/webapps/
 
             echo "Restarting Tomcat"
-            ssh root@3.110.204.120 "
+            ssh root@3.239.81.157 "
             /opt/tomcat/bin/shutdown.sh || true
             sleep 5
             /opt/tomcat/bin/startup.sh
