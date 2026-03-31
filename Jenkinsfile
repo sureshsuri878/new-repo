@@ -43,10 +43,10 @@ stage('Build') {
             ls -l target/*.war
 
             echo "Deploying WAR"
-            scp target/*.war root@3.239.81.157:/opt/tomcat/webapps/
+            scp target/*.war root@3.238.238.89:/opt/tomcat/webapps/
 
             echo "Restarting Tomcat"
-            ssh root@3.239.81.157 "
+            ssh root@3.238.238.89 "
             /opt/tomcat/bin/shutdown.sh || true
             sleep 5
             /opt/tomcat/bin/startup.sh
